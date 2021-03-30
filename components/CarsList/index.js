@@ -12,6 +12,7 @@ const CarsList = () => {
                 data={cars}
                 keyExtractor={item => item.name}
                 renderItem={({item}) => <CarItem car={item}/>}
+                showsVerticalScrollIndicator={false}
                 snapToAlignment={'start'}
                 decelerationRate={'fast'}
                 snapToInterval={Dimensions.get('window').height}
